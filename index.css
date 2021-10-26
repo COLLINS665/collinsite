@@ -8,12 +8,13 @@
     width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: rgba(10, 3, 3, 0.884);
     color: blanchedalmond;
-    margin: 1em;
+    /* margin: 1em; */
     border-radius: 20px;
     border: 2px solid wheat;
+
 
 }
 body{
@@ -25,15 +26,16 @@ body{
     border-radius: 50%;
 }
 h2{
-    font-size: 3em;
+    font-size: 2em;
     font-family: "Audiowide",sans-serif;
+    margin-left: 2em;
 } 
 h5{
     font-family: "Sofia",sans-serif;
     font-size: 18px;
 }
 .box1{
-    height: 47em;
+    height: auto;
     width: 47em;
     background-color: rgb(8, 8, 8);
     margin: 1em;
@@ -43,6 +45,9 @@ h5{
     color:white;
     box-shadow: 1px 1px 11px 1px green;
     animation: glow 2s linear infinite;
+    display: flex;
+    flex-direction:column;
+
 }
 @keyframes glow{
     25%{box-shadow: 1px 1px 11px 1px blue;}
@@ -56,6 +61,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     width: auto;
+    height: 100%;
     
 }
 p{
