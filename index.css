@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.intro{
+    height: 25vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(10, 3, 3, 0.884);
+    color: blanchedalmond;
+    margin: 1em;
+    border-radius: 20px;
+    border: 2px solid wheat;
+
+}
+body{
+    background-color: black;
+}
+#image1{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+}
+h2{
+    font-size: 3em;
+    font-family: "Audiowide",sans-serif;
+} 
+h5{
+    font-family: "Sofia",sans-serif;
+    font-size: 18px;
+}
+.box1{
+    height: 47em;
+    width: 47em;
+    background-color: rgb(8, 8, 8);
+    margin: 1em;
+    border: 2px solid black;
+    padding: 2em;
+    border-radius: 25px;
+    color:white;
+    box-shadow: 1px 1px 11px 1px green;
+    animation: glow 2s linear infinite;
+}
+@keyframes glow{
+    25%{box-shadow: 1px 1px 11px 1px blue;}
+    50%{box-shadow: 1px 1px 11px 1px white;}
+    75%{box-shadow: 1px 1px 11px 1px red}
+    100%{box-shadow: 1px 1px 11px 1px blue;}
+}
+main{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    
+}
+p{
+    text-align: justify;
+    padding: 0.5em;
+    font-size: 22px;
+}
+h6{
+    padding-top: 2em;
+    color: cadetblue;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4em;
+}
+#social:hover{
+    height: 40px;
+    width: 40px;
+    
+}
