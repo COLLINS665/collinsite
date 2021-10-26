@@ -21,9 +21,10 @@ body{
     background-color: black;
 }
 #image1{
-    height: 10em;
-    width: 10em;
+    height: 6em;
+    width: 6em;
     border-radius: 50%;
+    
 }
 h2{
     font-size: 2em;
@@ -33,6 +34,7 @@ h2{
 h5{
     font-family: "Sofia",sans-serif;
     font-size: 18px;
+    color: cyan;
 }
 .box1{
     height: auto;
@@ -47,6 +49,7 @@ h5{
     animation: glow 2s linear infinite;
     display: flex;
     flex-direction:column;
+    font-family: 'Architects Daughter',cursive;
 
 }
 @keyframes glow{
