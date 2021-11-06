@@ -15,14 +15,23 @@
 <body>
 
 <div class="buttons">
-    <div class="about">aboutt</div>
-    <div class="me">me tab</div>
-    <div class="contacts">contact</div>
+    <div class="about">about me</div>
+    <div class="me">Code stuff</div>
+    <div class="contacts">contact me</div>
 </div>
 <div class="hello">
-    <div class="pageinfo">Collins kiprutp</div>
-    <!-- <p id="innerinfo"> </p> -->
+    <div class="pageinfo"><img src="murat.jpg" id="dreamgirl" alt="">
+    <H1>Collins Unofficial</H1>
+    <p class="intro">lets fly </p>
+    <div class="pics">
+        <img src="interests.jpg" alt="">
+        <!-- <img src="guitar.jpg" alt=""> -->
+    </div>
+
+    </div>
+     <p id="innerinfo">  </p> 
 </div>
+
 
 <script>
     
@@ -35,22 +44,26 @@
     // pageinfo.innerHTML = 'this is the modified page info for the site '
 
     about.addEventListener('click',()=>{
-        pageinfo.innerHTML = `<img src='me.png'> 
-        <p>Who I am changes depending on who is asking.  I have many personalities. To many I am a friend who comes in time of need, to others I am a their go to bank when they are financially unstable and need some quick loan at a small interest . To the university I am a student, a social one and a good course mate. I am also an enemy to my enemies and a friend to my enemies’ enemies. I subscribe to positive thinking and being optimistic at all times. </p>
-        <p> I spend most time focusing on school work and making sure every second counts. Free times are for a little chit chat here and there and keeping in touch with friends and family. weekends are for assignments and any parties around me.
+        pageinfo.innerHTML = `<img src='me.png'>
+        
+        <p>Who I am changes depending on who is asking.  I have many personalities and I unleash each one whenever the time is appropriate. To many I am a friend-a very useful one who comes in time of need to help. Several people have the priviledge to have me as their enemy as well.Occasionaly, who I am depends on external factors like financial situation and the weather.Sometimes I am whoever you heard I am.Most important me is the forgiving and understanding me. I subscribe to positive thinking and being optimistic at all times. </p>
+        <p>Free time is for a little chit chat here and there and keeping in touch with friends and family. Weekends are for assignments and getting in touch with nature.
         `
     })
     me.addEventListener('click',()=>{
-        pageinfo.innerHTML=`<p>I write code when there is a problem that needs to be solved using code and also to make myself feel good. Yeah coding is fun, you feel nice when instructing the computers to do what you want. Code writing is seen as a field of intelligent men and women but truth be told most of the programmers you see do not know what is going on</p>`
+        pageinfo.innerHTML=`
+        <img src="code.jpg">
+        <p>Coding is an art,where the right mixture of letters of the alphabet and punctuation marks are used to solve real world problems in a manner in which a computer is able to understand,process the mixture and give out a solution.It takes a little time and effort to know the right keys to punch and sit in awe as the machine does it's work and results unfold before your very eyes. The feeling is breathtaking and fulfilling. Yeah coding is fun, you feel nice when instructing the computers to do what you want.</p>
+        <p>Code writing is seen as a field of intelligent men and women but truth be told most of the programmers you see do not know what is going on. You have to understand the syntax and have some serious problem solving skills to manage the whole thing. It can be a very rewarding career</p>
+        `
     })
     contacts.addEventListener('click',()=>{
         pageinfo.innerHTML = `<img src='callus.jpg'> 
         <ul>
-            <h5>you can hit me up here</h5>
-            <li>instagram</li>
-            <li>twitter</li>
-            <li>linkedin</li>
-            <li>github</li>
+            <li><a href="https://www.instagram.com/kimaiyojr">instagram</a></li>
+            <li><a href="https://www.twitter.com/CollinsThebrave?t=8pTtFvwLUMqMll7rY8UnHA&s=09">twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/collins-kimaiyo-95ba4b200">linkedin</a></li>
+            <li><a href="https://github.com/COLLINS665">github</a></li>
             </ul>
             
             
