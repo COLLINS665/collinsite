@@ -9,6 +9,7 @@ body{
     /* justify-content: center; */
     background-color: rgb(216, 212, 212);
     background-size: cover;
+    background-repeat: no-repeat;
     background-image: url('moon.jpg');
 }
 .hello{
