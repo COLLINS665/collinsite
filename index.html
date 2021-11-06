@@ -11,125 +11,54 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="intro">
-    <h2>collins kipruto</h2>
-    <h5>lets fly</h5>
-    <img id="image1" src="me.png" alt="">
+<div class="buttons">
+    <div class="about">aboutt</div>
+    <div class="me">me tab</div>
+    <div class="contacts">contact</div>
 </div>
+<div class="hello">
+    <div class="pageinfo">Collins kiprutp</div>
+    <!-- <p id="innerinfo"> </p> -->
+</div>
+
+<script>
     
-<main>
+    const pageinfo = document.querySelector('.pageinfo')
+    const about = document.querySelector('.about')
+    const me = document.querySelector('.me')
+    const contacts = document.querySelector('.contacts')
+    const innerinfo = document.querySelector('.innerinfo')
+    const imagess = document.querySelector('imagess')
+    // pageinfo.innerHTML = 'this is the modified page info for the site '
 
-<div class="box1"><img src="cessna.jpg" height="50%" width="100%"  alt="">
-    <h6>About me</h6>
-    <p>There is a lot one can say about themselves. The little I can write about me is this-I am a strong and multitalented person currently in Europe enjoying a short stay.My major is computer science. I always wanted to fly a plane as a pilot something that I am still working on. Maybe in a few years who knows. Lord help me on that. We could talk for hours on current trends touching on technology and all the new cryptocurrencies popping up each day. Learning how to play a guitar is in my bucketlist.I am a serious proponent of masculinity and i shun anything that tries to weaken it.</p>
-</div>
-<div class="box1">
-    <img src="unwlv.png" height="50%" width="100%" alt="">
-    <h6>campus info</h6>
-    <p>My studies were at <a href="http://www.wlv.ac.uk">University of Wolverhampton</a>,a very great institution in West Midlands,England.The University has 3 campuses you can see more at their website. They offer a wide range of courses to choose from. It is well equipped and has been in existence for around 200 years. The city is just a 5 minutes walk.There is also a great community to work with and make the most of your time over there.</p>
-    
+    about.addEventListener('click',()=>{
+        pageinfo.innerHTML = `<img src='me.png'> 
+        <p>Who I am changes depending on who is asking.  I have many personalities. To many I am a friend who comes in time of need, to others I am a their go to bank when they are financially unstable and need some quick loan at a small interest . To the university I am a student, a social one and a good course mate. I am also an enemy to my enemies and a friend to my enemies’ enemies. I subscribe to positive thinking and being optimistic at all times. </p>
+        <p> I spend most time focusing on school work and making sure every second counts. Free times are for a little chit chat here and there and keeping in touch with friends and family. weekends are for assignments and any parties around me.
+        `
+    })
+    me.addEventListener('click',()=>{
+        pageinfo.innerHTML=`<p>I write code when there is a problem that needs to be solved using code and also to make myself feel good. Yeah coding is fun, you feel nice when instructing the computers to do what you want. Code writing is seen as a field of intelligent men and women but truth be told most of the programmers you see do not know what is going on</p>`
+    })
+    contacts.addEventListener('click',()=>{
+        pageinfo.innerHTML = `<img src='callus.jpg'> 
+        <ul>
+            <h5>you can hit me up here</h5>
+            <li>instagram</li>
+            <li>twitter</li>
+            <li>linkedin</li>
+            <li>github</li>
+            </ul>
+            
+            
+            `
+        
+    })
 
-</div>
-<div class="box1">
-    <img src="code.jpg" height="50%" width="100%" alt="">
-    <h6>about coding</h6>
-<p>Having majored in computer science,most of the work on my machine is just software and websites stuff. I like the magical feeling that comes with writing code. That moment you think you know but you realise you don't so you google the answers you want.Coding is all fun trying to find a solution to a problem you have or solving another person's issues. Many a times you get requests to fix computers which I can not do myself. The arguments with rookies about whether HTML is a programming language or which framework to use never seems to end in this field.The whole software development is a learning moment as we discover things we did not think were possible in this world.</p>
-</div>
-
-<div class="box1">
-    <img src="interests.jpg" height="50%" width="100%" alt="">
-    <h6>my interests</h6>
-    <p>
-        Technology and anything that sounds like tech impress me. A.I and software have a good place in my mind and heart for their role in humanity. Imagine this world without computers. Terrible.Lovely supercars and great architecture please me. Talent and enthusiasm in people is a good thing to surround myself with. I love punctuality and I am always on time. Travelling is my hobby. My other hobby is enjoying music-the classic ones. Time is ticking! See you later,bye! 
-    </p>
-    
-
-
-    <div id="clock">
-        <h4 id="hours">:</h4>
-        <h4 id="minutes"></h4>
-        <h4 id="seconds"></h4>
-      </div>
-      <style>
-          #clock{
-    display: flex;
-    padding: 1em;
-    
-}
-h4{
-    font-size: 34px;
-    font-family: 'Courier New', Courier, monospace;
-    animation: colorchange 60s ease infinite;
-}
-@keyframes colorchange{
-    0%{color: blue;}
-    20%{color: chartreuse;}
-    40%{color: chocolate;}
-    60%{color: green;}
-    80%{color: maroon;}
-    100%{color: thistle;}
-}
-
-#clock{
-    color: chartreuse;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-      </style>
-      <script>
-          var clock = document.getElementById('clock')
-var hours = document.getElementById('hours')
-var minutes = document.getElementById('minutes')
-var seconds = document.getElementById('seconds')
-
-//defining the time function to make the clock work
-time = ()=>{
- var date = new Date() 
- var h = date.getHours()
- var m = date.getMinutes()
- var s = date.getSeconds()
-
- //adding zero to time if it is less than 10 to enhance appearances in the output
- if(h<10){
-     h = '0' + h
- }
- if(m<10){
-     m = '0' + m
- }
- if(s < 10){
-     s = '0' + s
- }
- 
- //allocating the declared variables to the declared variables
-
- hours.innerHTML = h + ':'
- minutes.innerHTML = m + ':'
- seconds.innerHTML = s
-
-}
-
-//calling/invoking the time function every second to make the clock work!
-//some little css is left 
-setInterval(time,1000)
-      </script>
-
-</div>
-
-</main>
-
-
-
-
-<footer>
-    <a href="https://www.facebook.com/collins.kipruto.12"><img  id="social" src="facebook-icon-png-770.png" height="32px" width="32px" alt=""></a>
-    <a href="https://www.instagram.com/kimaiyojr"><img id="social" src="https://cdn.icon-icons.com/icons2/1753/PNG/128/iconfinder-social-media-applications-3instagram-4102579_113804.png" height="32px" width="32px" alt=""></a>
-    <a href="https://www.twitter.com/CollinsThebrave?t=8pTtFvwLUMqMll7rY8UnHA&s=09"><img id="social" src="https://cdn.icon-icons.com/icons2/478/PNG/128/Twitter_46983.png" height="32px" width="32px" alt=""></a>
-    <a href="https://github.com/COLLINS665"><img id="social" src="https://cdn.icon-icons.com/icons2/1996/PNG/128/code_development_github_open_source_programming_source_icon_123274.png" height="32px" width="32px" alt=""></a>
-    <a href="https://www.linkedin.com/in/collins-kimaiyo-95ba4b200"><img id="social" src="https://cdn.icon-icons.com/icons2/642/PNG/128/linkedin_icon-icons.com_59208.png" height="32px" width="32px" alt=""></a>
-</footer>
+</script>  
 
 </body>
 </html>

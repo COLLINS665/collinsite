@@ -3,89 +3,68 @@
     padding: 0;
     box-sizing: border-box;
 }
-.intro{
-    height: 25vh;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(10, 3, 3, 0.884);
-    color: blanchedalmond;
-    /* margin: 1em; */
-    border-radius: 20px;
-    border: 2px solid wheat;
-
-
-}
 body{
-    background-color: black;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: rgb(216, 212, 212);
+    background-image: url('moon.jpg');
 }
-#image1{
-    height: 6em;
-    width: 6em;
-    border-radius: 50%;
+.hello{
+    height:auto;
+    width: 90vw;
+    margin:2em ;
+    margin-right: 2em;
+    border-radius: 20px;
+    background:linear-gradient(to top,rgba(25, 26, 29, 0.3),rgba(161, 186, 243, 0.3))
+    
+     
     
 }
-h2{
-    font-size: 2em;
-    font-family: "Audiowide",sans-serif;
-    margin-left: 2em;
-} 
-h5{
-    font-family: "Sofia",sans-serif;
-    font-size: 18px;
-    color: cyan;
-}
-.box1{
-    height: auto;
-    width: 47em;
-    background-color: rgb(8, 8, 8);
-    margin: 1em;
-    border: 2px solid black;
-    padding: 2em;
-    border-radius: 25px;
-    color:white;
-    box-shadow: 1px 1px 11px 1px green;
-    animation: glow 2s linear infinite;
+.buttons{
     display: flex;
-    flex-direction:column;
-    font-family: 'Architects Daughter',cursive;
-
-}
-@keyframes glow{
-    25%{box-shadow: 1px 1px 11px 1px blue;}
-    50%{box-shadow: 1px 1px 11px 1px white;}
-    75%{box-shadow: 1px 1px 11px 1px red}
-    100%{box-shadow: 1px 1px 11px 1px blue;}
-}
-main{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: auto;
-    height: 100%;
-    
+    justify-content: space-evenly;
+    color: white;
+    margin: 2em;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-family: "Architects Daughter",sans-serif;
 }
 p{
-    text-align: justify;
-    padding: 0.5em;
-    font-size: 22px;
-}
-h6{
+    color: white;
+    font-size: 24px;
+    padding-right: 2em;
+    padding-left: 2em;
     padding-top: 2em;
-    color: cadetblue;
-    font-size: 22px;
-    text-transform: capitalize;
 }
-footer{
+#innerinfo{
+    color: white;
+}
+.about,.me,.contacts{
+    /* background-color: rgb(169, 169, 172); */
+    padding: 0.4em;
+    opacity: 1.1;
+    border-radius: 20px;
+}
+img{
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+}
+.pageinfo{
+    padding: 2em;
+    color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    margin: 4em;
+    justify-content: center;
 }
-#social:hover{
-    height: 40px;
-    width: 40px;
-    
+ul{
+    padding: 1em;
+}
+li{
+    padding: 1em;
+    font-size: 2em;
+    text-transform: capitalize;
+    list-style-type: none;
 }
