@@ -1,96 +1,72 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-image: url('moon.jpg'); */
-    color: white;
-}
-.hello{
-    height:auto;
-    width: 90%;
-    margin:2em ;
-    margin-right: 2em;
-    border-radius: 20px;
-    background:linear-gradient(to bottom,rgba(25, 26, 29, 0.3),rgba(161, 186, 243, 0.3));
-    
-     
-    
-}
-.buttons{
+    background-color: white;
     display: flex;
-    justify-content: space-evenly;
-    color: white;
-    margin: 2em;
-    font-size: 1.2em;
-    text-transform: capitalize;
-    font-family: "Architects Daughter",sans-serif;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: url('moon.jpg'); */
 }
-p{
-    color: white;
-    font-size: 24px;
-    padding-top: 2em;
-
-}
-.intro{
-    color: rgba(15, 20, 12, 1.2);
-    /* padding-bottom:17em ; */
-    font-family: "Sofia",cursive;
-    font-size: 1.9em;
-}
-h1{
-    font-family: "Architects Daughter",sans-serif;
-}
-#innerinfo{
-    color: white;
-}
-.about,.me,.contacts{
-    /* background-color: rgb(169, 169, 172); */
-    padding: 0.4em;
-    opacity: 1.1;
-    border-radius: 20px;
-}
-img{
-    height: 14em;
-    width: 14em;
-    border-radius: 50%;
-}
-.pageinfo{
-    padding: 2em;
-    color: white;
+.maindiv{
+    /* height: ; */
+    width: 96vw;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 1.5em;
+    background-color: white;
+    
+    
 }
-ul{
-    padding: 1em;
+
+.box{
+    height: 6em;
+    width: 6em;
+    background-color: gold;
 }
-li{
-    padding: 1em;
-    font-size: 2em;
-    text-transform: capitalize;
-    list-style-type: none;
-    font-family: "Sofia",sans-serif;
+p{
+    font-size: 1.3em;
+    color: black;
+    font-weight: 700;
+
+    font-family: "Architects Daughter",sans-serif;
+    letter-spacing: 1px;
+    text-indent: 1.6em;
+    word-spacing: 1px;
+    padding-right: 2em;
+    padding-left: 2em;
 }
-a:link{
-    text-decoration: none;
+.me{
+    height: 18%;
+    width: 27%;
+    
+    border-radius: 50%;
+    padding-top: 2em;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 1em;
+    background-color: white ;
+    height: auto;
+    width: inherit;
+    justify-content: space-around;
+}
+hr{
     color: white;
+    width: inherit;
+    height: 1px;
+    margin-top: 1em;
 }
-a:hover{
+h3{
+    font-style: italic;
+    font-family: "Architects Daughter",sans-serif;
     color: white;
+    letter-spacing: 1.1px;
 }
-a{
-    color:black;
-}
-#code{
-    height: 10em;
-    width: 10em;
+img{
+    height: 3em;
+    width: 3em;
 }
