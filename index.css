@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     padding: 1.5em;
-    background-color: black;
+    
     
     
 }
@@ -35,8 +35,7 @@ p{
 .me{
     height: 18%;
     width: 27%;
-    
-    border-radius: 50%;
+    border-radius:50%;
     margin-top: 2em;
 }
 .socials{
@@ -44,10 +43,11 @@ p{
     align-items: center;
     flex-direction: row;
     padding-top: 1em;
-    background-color: white ;
+    /* background-color: chocolate; */
     height: auto;
     width: inherit;
     justify-content: space-around;
+    
 }
 hr{
     color: white;
@@ -64,7 +64,8 @@ h3{
 img{
     height: 2em;
     width: 2em;
-    background-color:wheat;
-    opacity:0.4;
-    border-radius:50%;
+    background-color: wheat;
+    opacity: 0.4;
+    border-radius: 50%;
+
 }
