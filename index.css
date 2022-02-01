@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,14 +20,9 @@ body{
     
 }
 
-.box{
-    height: 6em;
-    width: 6em;
-    background-color: gold;
-}
 p{
     font-size: 1.3em;
-    color: black;
+    color: #eeeeee;
     font-weight: 700;
 
     font-family: "Architects Daughter",sans-serif;
@@ -42,7 +37,7 @@ p{
     width: 27%;
     
     border-radius: 50%;
-    padding-top: 2em;
+    margin-top: 2em;
 }
 .socials{
     display: flex;
@@ -67,6 +62,9 @@ h3{
     letter-spacing: 1.1px;
 }
 img{
-    height: 3em;
-    width: 3em;
+    height: 2em;
+    width: 2em;
+    background-color:wheat;
+    opacity:0.4;
+    border-radius:50%;
 }
