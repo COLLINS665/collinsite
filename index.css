@@ -31,6 +31,8 @@ p{
     word-spacing: 1px;
     padding-right: 2em;
     padding-left: 2em;
+    text-align:justify;
+
 }
 .me{
     height: 18%;
