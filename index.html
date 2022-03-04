@@ -1,39 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collins:Official homepage for Collins</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel = "icon" href ="me.png" type = "image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel = "icon" href ="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" style="border-radius: 50%;" type = "image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collins.K:Official Website</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.content2').css('color','white')
+  });
+
+  </script>
 </head>
+
 <body>
-    <img class='me' src="me.png" alt="" srcset="">
-   
-<div class="maindiv">
-   
-    <div class="socials">
-        <a href="https://www.instagram.com/kimaiyo_co/" target="_blank"><img src="1161954_instagram_icon.png" alt="instagram" srcset=""></a>
-        <a href="https://twitter.com/VP_Collins?t=hzrOv8pkAtqRnrJkIwj3WQ&s=09" target="_blank"><img src="5282551_tweet_twitter_twitter logo_icon.png" alt="twitter" srcset=""></a>
-        <a href="https://www.linkedin.com/in/collins-kimaiyo-95ba4b200" target="_blank"><img src="5279114_linkedin_network_social network_linkedin logo_icon.png" alt="linked" srcset=""></a>
-        <a href="https://github.com/COLLINS665" target="_blank"><img src="4747499_github_icon.png" alt="" srcset=""></a>
-    </div>
-    
-    <hr>
+  <main>
 
-<p>Hello world, this is Collins' personal and official website - unofficial. I am a software and technology enthusiast from a small town in Africa. Nature and beautiful landscapes impress me. I love the latest news in technology including AI, IOT and cyber space.
-
-    Currently focusing on Python programming language and a little of web development.</p>
-<p>I enjoy travelling a lot, love beautiful landscapes and nature. Perfect ancient architecture are a sight for me, like the St Peters church built in 1205. Great aviation love and passion lives in me as well. </p>
+  <div class="content1"><img src="me.png" alt="a picture of me" srcset=""></div>
+  <div class="content2">
     
+    
+    <p>
+       <em>About</em>: This is Collins' official site. A Computer Science major and a technology enthusiast. Currently focusing on Python programming language and a little of web development. 
+      My latest skill being Jquery and CSS3, I am becoming a weapon of mass destruction infront of the keyboard 
+
 <br>
-<h3>LETS FLY</h3>
+<br>
+      <em>Works</em>: Much of my work is seated calmy in my computer. There is something about having completed projects and not pushing them to GitHub. You can visit my GitHub to see  some of the work that 
+      I have there. 
 
-</div>
+<br>
+<br>
+    <em>Future</em>: Progress towards working with APIs is currently underway. Future work will include proper APIs. I have one work done using a public API already. Won't it be nice to work with servers and databases? 
+    I share the same happiness with you. 
+      
+    </p>
+    
+    
+  </div>
+  <div class="content3">
+    
+      <a href="https://www.instagram.com/kimaiyo_co/" target="_blank"><img src="1161954_instagram_icon.png"  id="social" alt="instagram" srcset=""></a>
+      <a href="https://twitter.com/VP_Collins?t=hzrOv8pkAtqRnrJkIwj3WQ&s=09" target="_blank"><img src="5282551_tweet_twitter_twitter logo_icon.png" id="social" alt="twitter" srcset=""></a>
+      <a href="https://www.linkedin.com/in/collins-kimaiyo-95ba4b200" target="_blank"><img src="5279114_linkedin_network_social network_linkedin logo_icon.png" id="social" alt="linked" srcset=""></a>
+      <a href="https://github.com/COLLINS665" target="_blank"><img src="4747499_github_icon.png" alt="" id="social" srcset=""></a>
+  
 
+  </div>
 
-    <script src="newlins.js"></script>
+  </main>
+  <style>
+    body{
+      background-color: black;
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+      /* flex-wrap: wrap; */
+    }
+    main{
+      height: auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      background-color: black;
+      flex-wrap: wrap;
+      margin-top: 2em;
+       
+    }
+    em{
+      color: gray;
+      
+    }
+    #social{
+      height: 50px;
+      width: 50px;
+      background-color: white;
+      padding: 3px;
+      margin: 8px;
+    }
+    @keyframes animate{
+      0%{
+        height: 55px;
+        width: 55px;
+      }
+      100%{
+        height:55px;
+        width:55px;
+      }
+      
+    }
+    #social:hover{
+      
+      animation: animate;
+      animation-duration: 0.2s;
 
+    }
+
+    .content1,.content2,.content3{
+      height: 30em;
+      width: 30em;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    .content1{
+      height: 30em;
+      width: 20em;
+      background-color:black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content2{
+      width: 40em;
+      height: auto;
+      background-color: blac;
+      padding: 3em;
+    }
+    img{
+      height: 20em;
+      width: 20em;
+      border-radius: 50%;
+    }
+    .content3{
+      background-color:black;
+      width: 10em;
+      height: 20em;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    p{
+      font-size: 24px;
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+  </style>
 </body>
 </html>
+
